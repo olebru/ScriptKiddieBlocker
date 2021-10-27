@@ -8,4 +8,3 @@ Replace all occurences of ##USER## with computer\accountwithadminpriv or Ddomain
 Replace all occurences of ##Path## with full path to folder containing script.
 
 Import the XML file as a new scheduled task.
-Make sure that c:\temp exists, it is used for logging.

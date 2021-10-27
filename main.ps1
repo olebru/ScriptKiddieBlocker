@@ -15,7 +15,7 @@ $account = $theevent.Message.Substring( $theevent.Message.IndexOf("Account For W
 if(!$whitelist.contains($account))
 {
    "Creating Firewallrule..." | Out-File -FilePath C:\temp\log.txt -Append
-   New-NetFirewallRule -DisplayName "Block scriptkiddie src ip..." -Direction Inbound -Action Block -RemoteAddress $sourceip
+   New-NetFirewallRule -DisplayName "Block scriptkiddie that tried log in as: $account" -Direction Inbound -Action Block -RemoteAddress $sourceip
     
 }else {
    "Ignoring $account " | Out-File -FilePath C:\temp\log.txt -Append
